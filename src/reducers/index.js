@@ -13,7 +13,7 @@ import { combineReducers } from 'redux-immutable';
 // import clearLines from './clearLines';
 // import reset from './reset';
 // import drop from './drop';
-// import keyboard from './keyboard';
+import keyboard from './keyboard';
 // import focus from './focus';
 
 
@@ -32,7 +32,7 @@ const rootReducer = combineReducers({
     // clearLines,
     // reset,
     // drop,
-    // keyboard,
+    keyboard,
     // focus,
 });
 

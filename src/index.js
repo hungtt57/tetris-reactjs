@@ -3,11 +3,10 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 import App from './containers/';
-import './unit/const';
-import './control';
-import { subscribeRecord } from './unit';
-
-subscribeRecord(store); //Ghi lại trạng thái vào localstorage
+// import './unit/const';
+// import './control';
+import {subscribeRecord}  from './unit/index';
+subscribeRecord(store);
 
 render(
     <Provider store={store}>
