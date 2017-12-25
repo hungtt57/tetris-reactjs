@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import classnames from 'classnames';
+import Decorate from '../components/decorate';
 import propTypes from 'prop-types';
-
-import style from './index.less';
+import './index.css';
 
 
 class App extends React.Component {
@@ -30,10 +30,10 @@ class App extends React.Component {
 
         return (
             <div
-                className={style.app}
+                className='app'
             >
-                <div className={classnames({ [style.rect]: true, [style.drop]: this.props.drop })}>
-
+                <div className={classnames({ ['rect']: true, ['drop']: this.props.drop })}>
+                    <Decorate />
                 </div>
 
             </div>

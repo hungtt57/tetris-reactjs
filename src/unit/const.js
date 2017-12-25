@@ -99,14 +99,14 @@ const getParam = (param) => { // 获取浏览器参数
   return m ? decodeURI(m[1]) : '';
 };
 
-const lan = (() => {
+export const lan = (() => {
   let l = getParam('lan').toLowerCase();
   l = i18n.lan.indexOf(l) === -1 ? i18n.default : l;
   return l;
 })();
 
 document.title = i18n.data.title[lan];
-
+export const il8n2 =  i18n.data;
 // module.exports = {
 //   blockShape,
 //   origin,
